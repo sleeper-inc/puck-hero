@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Puck Hero Online</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="scoreBoard">Player 1: 0 - Player 2: 0</div>
+        <div id="statusText">Connecting...</div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+    <script src="game.js"></script>
+    <script>
+        window.onload = () => {
+            new PuckHeroOnline()
+        }
+    </script>
+</body>
+</html>
